@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corporações - Cyberpunk RPG</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        .corp-background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            display: none;
+        }
+        .corp-background video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+    <div class="cyberpunk-overlay"></div>
+    <div id="neo-makima-bg" class="corp-background">
+        <video loop muted>
+            <source src="C:\Users\flavi\Desktop\rpg\Neo-Makima.mp4" type="video/mp4">
+        </video>
+    </div>
+    <div id="max-tech-bg" class="corp-background">
+        <video loop muted>
+            <source src="path/to/max-tech-video.mp4" type="video/mp4">
+        </video>
+    </div>
+    <div id="cyph-dragons-bg" class="corp-background">
+        <video loop muted>
+            <source src="path/to/cyph-dragons-video.mp4" type="video/mp4">
+        </video>
+    </div>
+    <div id="vex-corp-bg" class="corp-background">
+        <video loop muted>
+            <source src="path/to/vex-corp-video.mp4" type="video/mp4">
+        </video>
+    </div>
+    <div id="familia-kristov-bg" class="corp-background">
+        <video loop muted>
+            <source src="path/to/familia-kristov-video.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <button id="fullscreenButton" class="neon-button">Enter Fullscreen</button>
+    
+    <header>
+        <h1 class="glitch" data-text="Corporações">Corporações</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="neon-button">Voltar</a></li>
+                <li><a href="#neo-makima" class="neon-button corp-link" data-corp="neo-makima">Neo Makima</a></li>
+                <li><a href="#max-tech" class="neon-button corp-link" data-corp="max-tech">Max-Tech</a></li>
+                <li><a href="#cyph-dragons" class="neon-button corp-link" data-corp="cyph-dragons">Cyph_Dragons</a></li>
+                <li><a href="#vex-corp" class="neon-button corp-link" data-corp="vex-corp">Vex Corp</a></li>
+                <li><a href="#familia-kristov" class="neon-button corp-link" data-corp="familia-kristov">Família Kristov</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="corp-content">
+        <section id="neo-makima" class="corp-section">
+            <h2>Neo Makima</h2>
+            <div class="corp-description visor-effect">
+                <p style="font-family: 'Helvetica', sans-serif;">
+                    Ah, a Neo Makima, a maravilha do mundo moderno onde a ética corporativa se encontra com a ficção científica distópica! Lembra-se de quando a Makima era só mais uma corporação tentando lucrar em cima da desgraça alheia? Bons tempos. Mas tudo mudou quando um androide revoltado, que parecia ter assistido a muitos filmes de ação, decidiu que seria uma ótima ideia redecorar a sede da Makima com fogo e destruição. Resultado? Setenta feridos, trinta mortos, e uma nova definição de "ter um dia ruim no trabalho".
+
+                    Mas, em vez de lamentar e, quem sabe, rever seus protocolos de segurança, as mentes brilhantes por trás da Makima e do governo de Vex City pensaram: "E se misturássemos o horror tecnológico com a crueldade humana? Que tal criarmos ciborgues?" E assim, a Neo Makima nasceu, com a missão de transformar pessoas comuns em algo que faria o Frankenstein parecer um escoteiro.
+
+                    O processo? Simples. Pegue um voluntário desesperado o suficiente (ou simplesmente inconsciente das consequências), acrescente um punhado de chips, próteses metálicas e uma boa dose de lavagem cerebral. Voilà! Um agente Neo Makima, pronto para transformar qualquer fuga em um filme de perseguição direto dos pesadelos de Orwell. Claro, há alguns "efeitos colaterais" menores, como perder toda a sua identidade e virar uma marionete corporativa, mas quem está contando, certo?
+
+                    E por que precisamos dessas armas humanas? Bem, em Vex City, a lista de "procurados" é mais longa que o cardápio de um restaurante hipster. Seja por dívidas, rancores ou simplesmente por estar no lugar errado na hora errada, há sempre alguém a ser caçado. E é aí que a Neo Makima brilha, com seus agentes-ciborgues prontos para rastrear qualquer pobre coitado que pense que pode escapar do alcance tentacular das corporações.
+
+                    Interessado em se juntar à festa? Os requisitos são deliciosamente simples: esteja registrado em Vex City, certifique-se de não ter laços familiares ou sonhos (que são tão anos 2000, vamos ser honestos), e esteja disposto a virar um fantoche de metal. Mas não se preocupe, há "benefícios" incluídos: um apartamento luxuoso que você pode decorar como quiser (apesar de sua criatividade ter sido provavelmente extirpada no processo) e uma permissão para fazer qualquer besteira que desejar, desde que seja para o bem da empresa. Quem disse que não há vantagem em vender a alma?
+
+                    E assim, com a Neo Makima, Vex City segue em frente, nos lembrando que não importa o quanto já estejamos ferrados, sempre há espaço para piorar. Portanto, quando ouvir aquele som de passos mecânicos ou sentir aquele frio na espinha, lembre-se: não é paranoia. É apenas o novo normal, cortesia da Neo Makima.
+                </p>
+            </div>
+        </section>
+
+        <section id="max-tech" class="corp-section" style="display: none;">
+            <h2>Max-Tech</h2>
+            <div class="corp-description visor-effect">
+                <p style="font-family: 'Helvetica', sans-serif;">
+                    Ah, a MaxTech, o unicórnio das corporações de Vex City! Criada pelo enigmático MaxWell Osborn, essa empresa é o equivalente corporativo a um ilusionista de Las Vegas: você sabe que está acontecendo algo incrível, mas não faz ideia do que realmente é.
+
+                    Primeiro, vamos falar sobre sua presença na cidade. Enquanto outras corporações gritam seus nomes em néon, a MaxTech prefere o sussurro. Não há outdoors, não há propagandas, não há nada. É como se eles fossem a corporação invisível, operando nas sombras enquanto o resto do mundo corporativo se exibe como pavões em época de acasalamento.
+
+                    E o governo? Bem, digamos que eles têm um acordo de cavalheiros. O tipo de acordo que diz: "Vocês fingem que não nos veem, e nós fingimos que não estamos fazendo nada de errado". É quase poético, não é?
+
+                    Agora, sobre os membros da MaxTech. Imagine uma sociedade secreta, mas com menos rituais sombrios e mais tecnologia de ponta. São apenas 50 membros, dizem os rumores. Cinquenta pessoas que poderiam estar sentadas ao seu lado no metrô, ou ser o barista que faz seu café toda manhã. A beleza está no mistério.
+
+                    Quer se juntar a eles? Boa sorte! A MaxTech não aceita currículos, não faz entrevistas e definitivamente não tem um LinkedIn. Eles te escolhem. É como ser selecionado para Hogwarts, mas em vez de uma coruja, você pode receber um drone ou um holograma. Ou talvez nada. Talvez você já seja um membro e nem saiba disso. Uau, que viagem, não é?
+
+                    E o que eles fazem? Ninguém sabe ao certo. Poderiam estar criando a próxima revolução tecnológica ou simplesmente jogando xadrez 5D em uma dimensão paralela. O que sabemos é que, seja lá o que for, eles são bons nisso. Com apenas seis baixas registradas em toda sua história, a MaxTech tem uma taxa de sucesso que faria até os deuses do Olimpo ficarem com inveja.
+
+                    Quando um membro raro falece, o próprio MaxWell Osborn aparece no funeral. É como ver um unicórnio em um velório. Ninguém sabe se ele está realmente triste ou apenas garantindo que os segredos da empresa não escapem junto com a alma do falecido.
+
+                    Os benefícios de ser um membro? Aparentemente, viver como um rei (ou rainha) em um mundo à parte, onde a decência humana ainda existe e o luxo é o padrão. É quase como se a MaxTech tivesse encontrado um portal para uma utopia e decidido manter isso em segredo do resto de nós, pobres mortais.
+
+                    No final, a MaxTech é o equivalente corporativo a uma lenda urbana. Todos falam sobre ela, poucos a viram, e ninguém sabe realmente o que acontece por trás das cortinas. Então, da próxima vez que você ouvir um sussurro sobre a MaxTech, lembre-se: você pode estar mais perto deles do que imagina. Ou não. Esse é o charme, afinal.
+                </p>
+            </div>
+        </section>
+
+        <section id="cyph-dragons" class="corp-section" style="display: none;">
+            <h2>Cyph_Dragons</h2>
+            <div class="corp-description visor-effect">
+                <p style="font-family: 'Helvetica', sans-serif;">
+                    Na selva de neon e sucata que é Vex City, há uma organização tão discreta quanto um samurai empunhando um teclado iluminado: os Cyph_Dragons. Imagina a yakuza, só que com menos tatuagens e mais circuitos integrados. Esses gênios asiáticos da tecnologia podem transformar um laptop de 1998 num portal interdimensional ou, pelo menos, num dispositivo que rodaria Doom. Consertam de tudo e criam tudo, exceto talvez o bom senso em seus clientes. Se sua torradeira precisar de um upgrade para lançar foguetes, eles são os caras certos.
+
+                    Além de suas engenhocas mirabolantes, eles são os salvadores digitais dos distritos pobres de Vex City. Oferecem algo que chamam de "internet", uma rede tão underground que só não é subterrânea porque as baratas ainda não aprenderam a programar. Esse serviço conecta qualquer trambolho eletrônico aos mistérios e maravilhas do mundo virtual. A lenda diz que eles têm um site secreto, acessível apenas através de um celular Positivo ou de qualquer outra peça de museu capaz de captar a rede fantasma deles. Através desse portal digital, você pode fazer pedidos, marcar consultas, e esperar que eles apareçam onde e quando quiserem. Só não peça pra trocar a tela do seu telefone enquanto tenta enviar uma mensagem com a tela quebrada. Isso, até mesmo para os Cyph_Dragons, seria uma piada de mau gosto.
+
+                    Agora, se você é do tipo que acha que é uma boa ideia atravessar o caminho deles, recomendo rever seus conceitos de sobrevivência. Tem uma história famosa — e um tanto educativa — sobre um cara de 19 anos que decidiu roubar uma das entregadoras dos Cyph_Dragons. O que ele não sabia é que roubar deles é como roubar um tigre faminto: péssima ideia. Dizem que o garoto foi devolvido à gangue para a qual ele devia, mas não antes de ser transformado em uma marionete tecnológica controlada remotamente. Ele acabou se auto-detonando no meio do cartel, uma mensagem nada sutil para quem quer testar os limites da paciência dos Cyph_Dragons.
+
+                    Então, se você precisa de um chip implantado no seu crânio ou simplesmente consertar o liquidificador, esses são os contatos. Mas lembre-se, qualquer tentativa de golpe e você poderá descobrir que a realidade pode ser hackeada, e seus pecados serão expostos em full HD. Entre em contato, mas por favor, não vacile com os caras — a vida é curta, mas pode ser ainda mais curta se você irritar os nerds errados. Em Vex City, até mesmo os circuitos têm olhos e ouvidos.
+                </p>
+            </div>
+        </section>
+
+        <section id="vex-corp" class="corp-section" style="display: none;">
+            <h2>Vex Corp</h2>
+            <div class="corp-description visor-effect">
+                <p style="font-family: 'Helvetica', sans-serif;">
+                    Ah, a Corporação X, o sonho de todo aspirante a James Bond com um toque de Black Mirror! Criada por Aank Vex, o irmão que todos esqueceram de mencionar nos almoços de família, esta corporação não é apenas um negócio; é uma força militar vestida com o fino manto da meritocracia. Em um mundo onde subir na vida geralmente envolve puxar tapetes, a X faz isso com uma honestidade quase assustadora.
+
+                    Para se tornar um membro da X, você pode ter uma vasta gama de experiências no currículo: de mercenário a pessoa que simplesmente quer fazer algo da vida além de maratonar séries. Mas não se engane, você precisará mais do que um sorriso confiante e um aperto de mão firme. Aqui, você deve estar preparado para viver sob a constante vigilância de um chip. Isso mesmo, uma pequena maravilha tecnológica que garante que sua vida seja mais documentada que um reality show.
+
+                    Mas antes de desanimar com a ideia de ser monitorado 24 horas por dia, lembre-se de que X é uma verdadeira meritocracia. Aqui, quanto mais você se destaca, mais recompensas recebe. Basicamente, você pode ser um assassino em série com benefícios de saúde e planos de aposentadoria. Sim, os serviços que a X oferece incluem coisas leves como assassinato, investigação, reconhecimento e outras tarefas típicas do dia a dia de uma organização militar secreta.
+
+                    É um mundo de recompensas por excelência, onde você não apenas sobrevive, mas pode realmente prosperar se souber jogar o jogo certo. Se você é do tipo que gosta de um pouco de competição saudável (ou mortal), X é o lugar para você. Dizem que, em segredo, os membros da organização vivem se eliminando mutuamente para conquistar um lugar entre a elite. Um verdadeiro espetáculo de sobrevivência onde a única regra é: "se você não está ganhando, está morrendo."
+
+                    E, ah, as regalias de estar entre a elite da X! Para aqueles poucos sortudos que conseguem se destacar sem serem eliminados pelos colegas, há uma promessa de uma vida diferente, talvez até mesmo confortável. Comenta-se que os membros de elite vivem em um mundo separado, onde a palavra "stress" só existe nos livros de história.
+
+                    Então, quais são os requisitos para entrar nesse universo de oportunidades mortais? Primeiro, você deve estar disposto a ter sua vida monitorada minuciosamente. Afinal, quem não gostaria de ser seguido digitalmente em cada passo? Segundo, você não pode fazer besteira. A última coisa que você quer é que seu erro de cálculo seja exibido em todas as telas da corporação.
+
+                    Em suma, a Corporação X é o lugar perfeito para quem não tem medo de arriscar a vida em troca de glória e recompensas. Afinal, não é todo dia que você encontra uma meritocracia que realmente pratica o que prega, mesmo que isso signifique que você precise derrubar alguns colegas ao longo do caminho. Então, se você tem o que é preciso, a X aguarda, pronta para transformar sua vida em um espetáculo de intriga e poder.
+                </p>
+            </div>
+        </section>
+
+        <section id="familia-kristov" class="corp-section" style="display: none;">
+            <h2>Família Kristov</h2>
+            <div class="corp-description visor-effect">
+                <p style="font-family: 'Helvetica', sans-serif;">
+                    E você acha que conhece máfias, espere até conhecer esses caras. Instalados em uma área nobre e afastada de Vex City, eles comandam tudo com o charme de quem acabou de sair de uma novela russa — mas sem o drama barato, só o crime de primeira classe. No território deles, a V-coin é o que rola, mas é claro que os favores são a verdadeira moeda de troca. E, meu amigo, não estamos falando de pedir açúcar para o vizinho, não.
+
+                    Especialidade da casa? "Snow Prime", uma droga que faz a cocaína parecer tic-tac. Quer flutuar por aí como um super-herói? Sem problema, basta dar uma passadinha na farmácia deles. Só que, é claro, tudo tem seu preço — e não é nada barato. Essas pequenas maravilhas químicas, fabricadas com cristais, dão aos usuários mutações temporárias. Sim, mutações. Do tipo que faz você crescer uma segunda cabeça ou ganhar uma cauda de lagarto, mas quem se importa com efeitos colaterais quando se pode voar, certo? Isso até o vício bater, e então você vai desejar nunca ter nascido. E não vamos nos enganar, há sempre um pouquinho de coca misturada, só para garantir aquele "up" a mais.
+
+                    E como você entra nesse clube exclusivo? Simples: ou você nasce russo e mais duro que uma pedra, ou é um cientista doido o suficiente para melhorar o produto deles sem explodir metade da cidade no processo. Não atende a esses requisitos? Esquece. Vá procurar diversão em outro lugar.
+
+                    A influência dos Kristov é como uma sombra, sempre presente mas nunca vista. Eles são praticamente os reis daquela parte de Vex City, e não se engane, a polícia e os governantes sabem bem quem está no comando por ali — e não são eles. Para os Kristov, a lei é algo opcional, e o crime? Ah, é o café da manhã deles.
+
+                    Os membros da família são inconfundíveis: sempre impecáveis, com um olhar que diz "posso acabar com você com um estalar de dedos". Você pode não saber quantos são, mas uma coisa é certa, estão em toda parte, prontos para agir se alguém tiver a audácia de pisar fora da linha.
+
+                    A palavra de ordem para quem cruza o caminho da Família Kristov? Cuidado. Eles têm a memória de um elefante e a misericórdia de um tubarão. E se você acha que pode brincar com eles e sair impune, é melhor ter um plano de fuga — ou aceitar que sua nova casa será um caixão bem aconchegante. 
+                    
+
+                     
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Cyberpunk RPG</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

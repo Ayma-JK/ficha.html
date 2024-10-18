@@ -1,0 +1,390 @@
+@import url('https://fonts.googleapis.com/css2?family=Helvetica:wght@400;700&display=swap');
+
+body {
+    font-family: 'Orbitron', sans-serif;
+    background-color: #000;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.jinsei-no-kage-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: repeating-linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.15) 0px,
+        rgba(0, 0, 0, 0.15) 1px,
+        transparent 1px,
+        transparent 2px
+    );
+    pointer-events: none;
+    z-index: 1;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 1rem;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+
+h1 {
+    margin: 0;
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+
+.glitch {
+    position: relative;
+    color: #fff;
+    letter-spacing: 0.5rem;
+    animation: glitch 2s linear infinite;
+}
+
+.glitch::before,
+.glitch::after {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.glitch::before {
+    left: 2px;
+    text-shadow: -2px 0 #ff00de;
+    clip: rect(44px, 450px, 56px, 0);
+    animation: glitch-anim 5s infinite linear alternate-reverse;
+}
+
+.glitch::after {
+    left: -2px;
+    text-shadow: -2px 0 #00fff9, 2px 2px #ff00de;
+    animation: glitch-anim2 1s infinite linear alternate-reverse;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+.neon-button {
+    font-size: 1rem;
+    display: inline-block;
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--neon-text-color);
+    border: var(--neon-text-color) 0.125em solid;
+    padding: 0.25em 1em;
+    border-radius: 0.25em;
+    text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em currentColor;
+    box-shadow: inset 0 0 0.5em 0 var(--neon-text-color), 0 0 0.5em 0 var(--neon-text-color);
+    position: relative;
+    transition: background-color 100ms linear;
+}
+
+.neon-button::before {
+    pointer-events: none;
+    content: "";
+    position: absolute;
+    background: var(--neon-text-color);
+    top: 120%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: perspective(1em) rotateX(40deg) scale(1, 0.35);
+    filter: blur(1em);
+    opacity: 0.7;
+}
+
+.neon-button:hover,
+.neon-button:focus {
+    background: var(--neon-text-color);
+    color: var(--neon-border-color);
+    text-shadow: none;
+}
+
+main {
+    padding: 2rem;
+    position: relative;
+    z-index: 2;
+}
+
+section {
+    margin-bottom: 2rem;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 1rem;
+    border: 1px solid var(--neon-border-color);
+    box-shadow: 0 0 10px var(--neon-border-color);
+}
+
+h2 {
+    color: var(--neon-text-color);
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+    z-index: 2;
+}
+
+@keyframes glitch-anim {
+    0% {
+        clip: rect(31px, 9999px, 94px, 0);
+    }
+    4.166666667% {
+        clip: rect(91px, 9999px, 43px, 0);
+    }
+    8.333333333% {
+        clip: rect(85px, 9999px, 30px, 0);
+    }
+    12.5% {
+        clip: rect(147px, 9999px, 138px, 0);
+    }
+    16.66666667% {
+        clip: rect(2px, 9999px, 37px, 0);
+    }
+    20.83333333% {
+        clip: rect(46px, 9999px, 9px, 0);
+    }
+    25% {
+        clip: rect(82px, 9999px, 31px, 0);
+    }
+    29.16666667% {
+        clip: rect(68px, 9999px, 123px, 0);
+    }
+    33.33333333% {
+        clip: rect(144px, 9999px, 34px, 0);
+    }
+    37.5% {
+        clip: rect(115px, 9999px, 43px, 0);
+    }
+    41.66666667% {
+        clip: rect(132px, 9999px, 73px, 0);
+    }
+    45.83333333% {
+        clip: rect(69px, 9999px, 136px, 0);
+    }
+    50% {
+        clip: rect(57px, 9999px, 73px, 0);
+    }
+    54.16666667% {
+        clip: rect(113px, 9999px, 62px, 0);
+    }
+    58.33333333% {
+        clip: rect(21px, 9999px, 28px, 0);
+    }
+    62.5% {
+        clip: rect(142px, 9999px, 78px, 0);
+    }
+    66.66666667% {
+        clip: rect(81px, 9999px, 82px, 0);
+    }
+    70.83333333% {
+        clip: rect(26px, 9999px, 126px, 0);
+    }
+    75% {
+        clip: rect(82px, 9999px, 116px, 0);
+    }
+    79.16666667% {
+        clip: rect(89px, 9999px, 77px, 0);
+    }
+    83.33333333% {
+        clip: rect(3px, 9999px, 79px, 0);
+    }
+    87.5% {
+        clip: rect(2px, 9999px, 98px, 0);
+    }
+    91.66666667% {
+        clip: rect(54px, 9999px, 54px, 0);
+    }
+    95.83333333% {
+        clip: rect(133px, 9999px, 88px, 0);
+    }
+    100% {
+        clip: rect(53px, 9999px, 47px, 0);
+    }
+}
+
+@keyframes glitch-anim2 {
+    0% {
+        clip: rect(132px, 9999px, 101px, 0);
+    }
+    100% {
+        clip: rect(143px, 9999px, 111px, 0);
+    }
+}
+
+.city-image {
+    width: 100%;
+    max-width: 887px;
+    height: auto;
+    margin-bottom: 1rem;
+    border: 2px solid var(--neon-border-color);
+    box-shadow: 0 0 10px var(--neon-border-color);
+    display: block; /* Ensure image is visible when section is shown */
+}
+
+.city-description {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 1rem;
+    border: 1px solid var(--neon-border-color);
+    box-shadow: 0 0 10px var(--neon-border-color);
+    font-family: 'Helvetica', sans-serif;
+    display: block; /* Ensure description is visible when section is shown */
+}
+
+.city-description h3 {
+    color: var(--neon-text-color);
+    margin-bottom: 1rem;
+    font-size: 1.5em;
+    text-transform: uppercase;
+}
+
+.city-description p {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+    position: relative;
+    display: inline-block;
+}
+
+.city-description p::before,
+.city-description p::after {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.city-description p::before {
+    left: 2px;
+    text-shadow: -1px 0 #ff00de;
+    clip: rect(44px, 450px, 56px, 0);
+    animation: glitch-anim 5s infinite linear alternate-reverse;
+}
+
+.city-description p::after {
+    left: -2px;
+    text-shadow: -1px 0 #00fff9, 1px 1px #ff00de;
+    animation: glitch-anim2 1s infinite linear alternate-reverse;
+}
+
+.visor-effect {
+    position: relative;
+    overflow: hidden;
+    padding: 20px;
+    background: linear-gradient(0deg, rgba(0,255,0,0.1) 50%, transparent 50%);
+    background-size: 100% 4px;
+    animation: scan 2s linear infinite;
+}
+
+.visor-effect::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: rgba(0,255,0,0.5);
+    animation: scan 2s linear infinite;
+}
+
+@keyframes scan {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 0 100%;
+    }
+}
+
+.glitch-text {
+    position: relative;
+    animation: glitch-skew 1s infinite linear alternate-reverse;
+}
+
+.glitch-text::before,
+.glitch-text::after {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.glitch-text::before {
+    left: 2px;
+    text-shadow: -2px 0 #ff00de;
+    clip: rect(44px, 450px, 56px, 0);
+    animation: glitch-anim 5s infinite linear alternate-reverse;
+}
+
+.glitch-text::after {
+    left: -2px;
+    text-shadow: -2px 0 #00fff9, 2px 2px #ff00de;
+    animation: glitch-anim2 1s infinite linear alternate-reverse;
+}
+
+@keyframes glitch-skew {
+    0% {
+        transform: skew(-2deg);
+    }
+    100% {
+        transform: skew(2deg);
+    }
+}
+
+.flicker-text {
+    animation: flicker 0.3s infinite;
+}
+
+@keyframes flicker {
+    0% {
+        opacity: 0.1;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.1;
+    }
+}
+
+.city-section {
+    display: none; /* Hide all sections by default */
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.city-image {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    display: block; /* Ensure image is visible when section is shown */
+}
+
+.city-description {
+    display: block; /* Ensure description is visible when section is shown */
+}
